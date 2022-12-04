@@ -4,6 +4,12 @@
     
 }
 
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+
 header{
     place-items: center;
     width: 100%;
@@ -11,13 +17,13 @@ header{
     background-color: black;
     text-align: center;
 }
-nav.con{
+header nav.con{
     width: 100%;
     margin: 0px;
     padding: 0px;
 }
 
-nav div{
+header nav div{
     height: 50px;
     text-align: center;
     display: flex;
@@ -26,58 +32,91 @@ nav div{
     color: #cfcfcf;
 }
 
-nav .row{
+header nav .row{
     width: 100%;
     margin: 0;
 }
 
-.slogo{
+header nav div .slogo{
     width:80%;
 }
 
-.logo{
+header nav div .logo{
     height: 80%;
     cursor: pointer;
 }
 
-.logo:hover{
+header nav div .logo:hover{
     filter: brightness(150%);
 }
 
-.moreop{
+header nav .snav .moreop{
     cursor: pointer;
     width: 60px;
     font-size: 12px;
 }
 
-.moreop:hover{
+header nav .snav .moreop:hover{
     color: white;
 }
 
-.navop{
+header nav .lnav .navop{
     font-size: 11px;
     cursor: pointer;
 }
 
-.navop:hover{
+header nav .lnav .navop:hover{
     color: white;
 }
 
 @media (min-width:768px){
-    .snav *{
+    header nav .snav *{
         display: none;
     }
-    .snav{
+    header nav .snav{
         display: none;
     }
 }
 
 @media (max-width:768px){
-    .lnav *{
+    header nav .lnav *{
         display: none;
     }
-    .lnav{
+    header nav .lnav{
         display: none;
     }
 }
 
+.background{
+    width: 100%;
+    height: 100%;
+    background-color: #fbebc3;
+}
+
+.background main{
+    width: 100%;
+    height: 100%;
+}
+
+.background main .first{
+    width: 100%;
+    height: 250px;
+    padding-top: 50px;
+}
+
+.background main .first h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+.background main .video{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+}
+
+.background main .video video{
+    width: 90%;
+}
